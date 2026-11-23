@@ -1,0 +1,533 @@
+
+/* ================= GENERAL STYLING ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+
+/* ================= NAVIGATION BAR ================= */
+
+.navbar {
+    background-color: #172B4D;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #D62839;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D62839;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ================= HOME SECTION ================= */
+
+.home-section {
+    padding: 80px 0;
+    background-color: #F5F5F5;
+}
+
+.home-content h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #172B4D;
+    margin-bottom: 20px;
+}
+
+.home-content h1 span {
+    display: block;
+    color: #D62839;
+}
+
+.home-content p {
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.find-btn {
+    background-color: #D62839;
+    color: white;
+    padding: 12px 25px;
+    margin-right: 10px;
+}
+
+.find-btn:hover {
+    background-color: #B51F2E;
+    color: white;
+}
+
+.register-btn {
+    border: 2px solid #172B4D;
+    color: #172B4D;
+    padding: 10px 23px;
+}
+
+.register-btn:hover {
+    background-color: #172B4D;
+    color: white;
+}
+
+.image-placeholder {
+    height: 400px;
+    background-color: #FCE4E4;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #D62839;
+    text-align: center;
+}
+
+.image-placeholder span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.image-placeholder p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: #172B4D;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #666666;
+    font-size: 16px;
+}
+
+
+/* ================= HOW IT WORKS ================= */
+
+.how-section {
+    padding: 65px 0;
+    background-color: white;
+}
+
+.step-card {
+    background-color: #F5F5F5;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    background-color: #D62839;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.step-card h3 {
+    color: #172B4D;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.step-card p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ================= FIND DONORS ================= */
+
+.donors-section {
+    padding: 70px 0;
+    background-color: #F5F5F5;
+}
+
+.search-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.form-label {
+    color: #172B4D;
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    padding: 11px;
+    border: 1px solid #CCCCCC;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #D62839;
+    box-shadow: 0 0 5px rgba(214, 40, 57, 0.2);
+}
+
+.search-btn {
+    background-color: #D62839;
+    color: white;
+    padding: 11px;
+    border: none;
+}
+
+.search-btn:hover {
+    background-color: #B51F2E;
+    color: white;
+}
+
+.donor-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.donor-card:hover {
+    transform: translateY(-5px);
+}
+
+.blood-icon {
+    width: 65px;
+    height: 65px;
+    background-color: #FCE4E4;
+    color: #D62839;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+.donor-card h3 {
+    color: #172B4D;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.donor-card p {
+    color: #555555;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #D62839;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #B51F2E;
+    color: white;
+}
+
+.demo-note {
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+/* ================= REGISTRATION SECTION ================= */
+
+.register-section {
+    padding: 70px 0;
+    background-color: white;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #F5F5F5;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    background-color: #D62839;
+    color: white;
+    padding: 12px 30px;
+    margin-top: 15px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #B51F2E;
+    color: white;
+}
+
+
+/* ================= EMERGENCY REQUEST ================= */
+
+.request-section {
+    padding: 70px 0;
+    background-color: #FCEAEA;
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+    padding: 70px 0;
+    background-color: white;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-content h3 {
+    color: #D62839;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #172B4D;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #DDDDDD;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #D62839;
+}
+
+.footer hr {
+    border-color: #777777;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+
+@media (max-width: 991px) {
+
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        border-top: 1px solid #354766;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .home-section {
+        padding: 55px 0;
+    }
+
+    .home-content {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .image-placeholder {
+        height: 300px;
+    }
+
+    .image-placeholder span {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .home-content h1 {
+        font-size: 31px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+    }
+
+    .find-btn,
+    .register-btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .image-placeholder {
+        height: 230px;
+    }
+
+    .image-placeholder span {
+        font-size: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .how-section,
+    .donors-section,
+    .register-section,
+    .request-section,
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .search-box,
+    .form-container {
+        padding: 20px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+}
